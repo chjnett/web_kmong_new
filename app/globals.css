@@ -18,7 +18,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 section[id] { scroll-margin-top: 12px; }
 .section-wrap { padding-left: var(--gutter); padding-right: var(--gutter); max-width: 1920px; margin-inline: auto; }
 .eyebrow { display: block; font-size: 12px; font-weight: 500; letter-spacing: .12em; line-height: 1.6; }
-.button { min-height: 56px; display: inline-flex; justify-content: space-between; align-items: center; gap: 44px; padding: 0 25px; font-size: 15px; font-weight: 500; transition: background .2s, color .2s; }
+.button { min-height: 56px; display: inline-flex; justify-content: space-between; align-items: center; gap: 44px; padding: 0 25px; border-radius: 8px; font-size: 15px; font-weight: 500; transition: background .2s, color .2s; }
 .button span { font-size: 23px; font-weight: 300; }
 .button.bronze { background: var(--bronze); color: #20211e; }
 .button.bronze:hover { background: #d2b376; }
