@@ -36,7 +36,7 @@ await page.locator('[name=schedule]').selectOption({ label: '3 ~ 6개월 이내'
 await page.locator('[type=checkbox]').check();
 await page.locator('.contact-form button[type=submit]').click();
 await page.locator('.success-state').waitFor();
-await page.getByRole('button', { name: '공간 더 둘러보기' }).click();
+await page.getByRole('button', { name: '사이트로 돌아가기' }).click();
 assert.equal(await page.locator('.contact-dialog').evaluate(el => el.open), false);
 assert(await page.getByRole('button', { name: '견적 문의' }).evaluate(el => el === document.activeElement), 'Dialog should restore focus');
 await page.locator('.project-image').first().click();
